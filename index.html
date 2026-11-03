@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FunFacts Uploader</title>
+<style>
+  :root { --bg: #0b1020; --card: #151b2e; --text: #e8ecf6; --muted: #93a0bf; --gold: #ffd23f; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, Segoe UI, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px; }
+  h1 { margin: 0 0 4px; font-size: 30px; }
+  h2 { margin-top: 36px; font-size: 20px; color: var(--gold); }
+  p, li { color: var(--muted); }
+  a { color: var(--gold); }
+  .card { background: var(--card); border-radius: 14px; padding: 4px 22px 18px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>FunFacts Uploader</h1>
+  <p>A personal tool that publishes short science videos to the
+    <a href="https://www.youtube.com/channel/UCCxoPkVpsaUfwKI5WDz_qaA">FunFactsToKnow</a> YouTube channel.</p>
+
+  <div class="card" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>Last updated: November 3, 2026</p>
+    <ul>
+      <li>FunFacts Uploader is used only by the owner of the FunFactsToKnow channel, to upload that channel's own videos.</li>
+      <li>It requests a single Google permission: uploading videos to YouTube (<code>youtube.upload</code>).</li>
+      <li>It does not collect, sell or share any personal data, and does not read your other YouTube or Google data.</li>
+      <li>The access token Google issues is stored only on the owner's computer and is never sent anywhere except Google.</li>
+      <li>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Use of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        including the Limited Use requirements. Videos are uploaded under the
+        <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and
+        <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>
