@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YCFS Dashboard</title>
+<style>
+  :root { --bg: #0b1020; --card: #151b2e; --text: #e8ecf6; --muted: #93a0bf; --gold: #ffd23f; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, Segoe UI, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px; }
+  h1 { margin: 0 0 4px; font-size: 30px; }
+  h2 { margin-top: 36px; font-size: 20px; color: var(--gold); }
+  p, li { color: var(--muted); }
+  a { color: var(--gold); }
+  .card { background: var(--card); border-radius: 14px; padding: 4px 22px 18px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>YCFS Dashboard</h1>
+  <p>A private, read-only desktop tool that shows the statistics of the Your Cool Facts Show accounts
+    (<a href="https://www.youtube.com/channel/UCCxoPkVpsaUfwKI5WDz_qaA">YouTube</a>,
+    <a href="https://www.tiktok.com/@yourcoolfactsshow">TikTok</a>,
+    <a href="https://www.instagram.com/yourcoolfactsshow/">Instagram</a>) to their owner. It runs only on the owner's computer and never publishes anything.</p>
+
+  <div class="card" id="terms">
+    <h2>Terms of Service</h2>
+    <p>Last updated: November 5, 2026</p>
+    <ul>
+      <li>YCFS Dashboard is for the personal use of the owner of the Your Cool Facts Show accounts. It is not offered to the public and no one else signs in to it.</li>
+      <li>It only reads statistics (followers, views, likes, comments, shares) of accounts the owner controls, through the official YouTube, TikTok and Instagram APIs, in line with the
+        <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>,
+        <a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a> and
+        <a href="https://help.instagram.com/581066165581870">Instagram Terms of Use</a>.</li>
+      <li>It does not post, edit, delete, like or comment on anything.</li>
+      <li>The tool is provided as is, without any warranty.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>Last updated: November 5, 2026</p>
+    <ul>
+      <li>Permissions requested, all read-only:
+        YouTube <code>youtube.readonly</code> and <code>yt-analytics.readonly</code>;
+        TikTok <code>user.info.basic</code>, <code>user.info.stats</code> and <code>video.list</code>;
+        Instagram <code>instagram_business_basic</code> and <code>instagram_business_manage_insights</code>.</li>
+      <li>The statistics and the access tokens are stored only in a local database on the owner's computer. They are sent nowhere except to the platform that issued them, and are never sold, shared or used for advertising.</li>
+      <li>Deleting the dashboard's local data folder erases everything it stored.</li>
+      <li>Access can be revoked at any time:
+        <a href="https://myaccount.google.com/permissions">Google account permissions</a>,
+        TikTok app (Settings and privacy &gt; Security &gt; Apps and services permissions),
+        Instagram app (Settings &gt; Website permissions &gt; Apps and websites).</li>
+      <li>Use of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        including the Limited Use requirements.</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>
